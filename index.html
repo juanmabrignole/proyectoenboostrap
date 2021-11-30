@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Estilos Boostrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Implementando Bootstrap</title>
+  </head>
+
+  <body>
+    <!--Filas y Columnas en Boostrap-->
+
+    <div class="container border border-primary">
+      <div class="row">
+        <header class="col-12 bg-primary text-white p-2 ps-5">
+          <h1>Aprendiendo Boostrap en CoderHouse</h1>
+        </header>
+
+        <nav id="menu" class="col-12 bg-secondary text-white">
+          <ul class="row">
+            <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+            <li class="col-xs-12 col-sm-12 col-md">Pagina 1</li>
+            <li class="col-xs-12 col-sm-12 col-md">Pagina 2</li>
+            <li class="col-xs-12 col-sm-12 col-md">Pagina 3</li>
+            <li class="col-xs-12 col-sm-12 col-md">Contacto</li>
+          </ul>
+        </nav>
+
+        <section id="content" class="col-12">
+          <div class="row">
+            <section id="productos" class="col-9 border">
+              <h2>Productos</h2>
+              <hr />
+              <div class="items row">
+                  <!--RESPONSIVE-->
+                  <div class="item col col-md-12  col-sm-12 bg-primary border">Producto</div>
+                  <div class="item col col-md-12 col-sm-6 bg-warning border">Producto</div>
+                  <div class="item col col-md-12 col-sm-6 bg-danger border">Producto</div>
+
+                <div class="item col-3 bg-primary border m-3">Producto</div>
+                <div class="item col-3 bg-warning border m-3">Producto</div>
+                <div class="item col-3 bg-danger border m-3">Producto</div>
+
+                <!--Filas y Columas de ancho automatico-->
+                <div class="row mt-3">
+                  <div class="item col bg-primary border m-2">Producto</div>
+                  <div class="item col bg-warning border m-2">Producto</div>
+                  <div class="item col bg-danger border m-2">Producto</div>
+                </div>
+                <div class="row mt-3 mb-3">
+                  <div class="item col bg-primary border m-2">Producto</div>
+                  <div class="item col bg-warning border m-2">Producto</div>
+                  <div class="item col bg-danger border m-2">Producto</div>
+                  <div class="item col bg-danger border m-2">Producto</div>
+                </div>
+                <!--Alineacion Horizontal de elementos-->
+                <div class="row mt-3 justify-content-around">
+                    <div class="item col-3 bg-primary border m-2">Producto</div>
+                    <div class="item col-3 bg-warning border m-2">Producto</div>
+                  </div>
+              </div>
+              <!--Aplicando OFFSET-->
+              <div class="row mt-3 mb-3">
+                <div class="item col-2 bg-primary offset-1">Producto</div>
+                <div class="item col-2 bg-warning offset-1">Producto</div>
+                <div class="item col-2 bg-danger offset-1">Producto</div>
+                <div class="item col-2 bg-danger offset-1">Producto</div>
+              </div>
+            </section>
+            <!--Alineacion Vertical de los elementos-->
+            <aside class="col-3 border">
+              <h2>Barra Lateral</h2>
+                <div class="lateral row bg-light align-items-center">
+                    <div class="col-4 bg-primary align-self-start">
+                        Elemento 1
+                    </div>
+                    <div class="col-4 bg-success align-self-center">
+                        Elemento 2
+                    </div>
+                    <div class="col-4 bg-warning align-self-end">
+                        Elemento 3
+                    </div>
+                </div>
+            </aside>
+          </div>
+        </section>
+        <footer class="col-lg-12 bg-info">
+          &copy; Bootstrap con Juanma Brignole
+        </footer>
+      </div>
+    </div>
+
+    <!--
+    <div class="mi-web w-75 m-auto p-5 border border-danger">
+    <h1>Aprendiendo Boostrap</h1>
+    <h2>Hoy veremos el framework de CSS mas utilizado</h2>
+    <button type="button" class="btn btn-success">Success</button>
+</div>
+-->
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
